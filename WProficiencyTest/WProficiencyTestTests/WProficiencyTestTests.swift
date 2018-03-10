@@ -21,16 +21,24 @@ class WProficiencyTestTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTitleExitsFromMockData() {
+        let canada: Canada = self.mockData()
+        let viewController = ViewController(canada: canada)
+        XCTAssertNil(viewController.title);
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testTableExistsWhenNoData() {
+        let canada: Canada = self.mockData()
+        let viewController = ViewController(canada: canada)
+        XCTAssertNotNil(viewController.tableView);
     }
     
+    //MARK: Data    
+    func mockData() -> Canada{
+        let photo = Photo()
+        let canada = Canada()
+        canada.title = "a"
+        canada.rows = [photo]
+        return canada
+    }
 }

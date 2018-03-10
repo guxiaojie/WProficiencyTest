@@ -4,4 +4,9 @@ platform :ios, '8.0'
 target "WProficiencyTest" do
         pod "SDWebImage", "~> 4.0"
 end
-    
+
+
+target "WProficiencyTestTests" do
+    pod "SDWebImage", "~> 4.0"
+end
+

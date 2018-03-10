@@ -37,43 +37,8 @@ class PhotoRequest: NSObject {
                 return
             }
             
-            do {
-                if let json = try JSONSerialization.jsonObject(with: convertedData) as? [String: Any],
-                    let rows = json["rows"] as? [[String: Any]] {
-                    
-                    //init canada model
-                    let canada: Canada = Canada()
-                    if let title = json["title"] as? String {
-                        canada.title = title
-                    }
-                    
-                    //add photos to canada
-                    var photos = [Photo]()
-                    for photo in rows {
-                        let aPhoto = Photo()
-                        if let title = photo["title"] as? String {
-                            aPhoto.title = title
-                        }
-                        if let description = photo["description"] as? String {
-                            aPhoto.description = description
-                        }
-                        if let imageHref = photo["imageHref"] as? String {
-                            aPhoto.imageHref = imageHref
-                        }
-                        photos.append(aPhoto)
-                    }
-                    canada.rows = photos
-                    
-                    completion(canada, nil)
-                    
-                } else {
-                    
-                    completion(nil, error)
-                }
-            } catch {
-                print("Error deserializing JSON: \(error)")
-                completion(nil, error)
-            }
+            completion(PhotoRequest.parseData(data: convertedData), error)
+
         }
         downloadTask.resume()
     }
@@ -101,5 +66,46 @@ class PhotoRequest: NSObject {
             //Image Data Should be Cached
         }
         downloadTask.resume()
+    }
+    
+    class func parseData(data: Data!) -> Canada? {
+        do {
+            if let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+                let rows = json["rows"] as? [[String: Any]] {
+                
+                //init canada model
+                let canada: Canada = Canada()
+                if let title = json["title"] as? String {
+                    canada.title = title
+                }
+                
+                //add photos to canada
+                var photos = [Photo]()
+                for photo in rows {
+                    let aPhoto = Photo()
+                    if let title = photo["title"] as? String {
+                        aPhoto.title = title
+                    }
+                    if let description = photo["description"] as? String {
+                        aPhoto.description = description
+                    }
+                    if let imageHref = photo["imageHref"] as? String {
+                        aPhoto.imageHref = imageHref
+                    }
+                    photos.append(aPhoto)
+                }
+                canada.rows = photos
+                
+                return canada
+                
+            } else {
+                
+                return nil
+            }
+        } catch {
+            print("Error deserializing JSON: \(error)")
+            return nil
+            
+        }
     }
 }

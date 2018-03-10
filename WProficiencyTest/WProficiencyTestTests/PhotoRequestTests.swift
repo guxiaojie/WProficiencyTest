@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import WProficiencyTest
 
 class PhotoRequestTests: XCTestCase {
     
@@ -20,16 +21,20 @@ class PhotoRequestTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testParseJSON() {
+        let testBundle = Bundle(for: type(of: self))
+        let path = testBundle.path(forResource: "data", ofType: "json")
+        let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .alwaysMapped)
+        let canada = PhotoRequest.parseData(data: data)
+        XCTAssertNotNil(canada);
+    }
+
     
 }
