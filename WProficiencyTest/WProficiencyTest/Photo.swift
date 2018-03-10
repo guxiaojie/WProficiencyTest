@@ -14,9 +14,8 @@ class Photo {
     var description: String?
 }
 
-
 /*
- //Comments here: just tried to use JSONDecoder().decode(Canada.self, from: convertedData)
+//Comments here: just tried to use JSONDecoder().decode(Canada.self, from: convertedData)
 struct Canada: Decodable {
     let title: String
     let rows: [Photo]

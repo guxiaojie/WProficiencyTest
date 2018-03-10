@@ -106,7 +106,10 @@ class PhotoTableViewCell: UITableViewCell {
     func reloadData(photo: Photo) {
         self.titleLabel.text = photo.title ?? "No title!😕"
         self.descriptionLabel.text = photo.description ?? "No description!😒"
-//        self.photoImageView.sd_setImage(with: URL(string: photo.imageHref ?? ""), placeholderImage: UIImage(named: "cloud.png"))
+        
+        //Here use SDWebImage
+        //Other wise I'll category UIImage (download Data and Manage Cache and so on)
+        self.photoImageView.sd_setImage(with: URL(string: photo.imageHref ?? ""), placeholderImage: UIImage(named: "cloud.png"))        
     }
 
 }

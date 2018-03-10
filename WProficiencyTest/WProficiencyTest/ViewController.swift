@@ -94,7 +94,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: PhotoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! PhotoTableViewCell
+        let cell: PhotoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PhotoTableViewCell
         if let rows = self.canada.rows {
             if indexPath.row < rows.count {
                 cell.reloadData(photo: rows[indexPath.row])

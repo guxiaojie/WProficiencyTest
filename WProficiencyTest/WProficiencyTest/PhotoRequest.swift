@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class PhotoRequest: NSObject {
     static let WURL: String = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
 
@@ -37,10 +36,18 @@ class PhotoRequest: NSObject {
                 completion(nil, error)
                 return
             }
-
+            
             do {
                 if let json = try JSONSerialization.jsonObject(with: convertedData) as? [String: Any],
                     let rows = json["rows"] as? [[String: Any]] {
+                    
+                    //init canada model
+                    let canada: Canada = Canada()
+                    if let title = json["title"] as? String {
+                        canada.title = title
+                    }
+                    
+                    //add photos to canada
                     var photos = [Photo]()
                     for photo in rows {
                         let aPhoto = Photo()
@@ -55,10 +62,6 @@ class PhotoRequest: NSObject {
                         }
                         photos.append(aPhoto)
                     }
-                    let canada: Canada = Canada()
-                    if let title = json["title"] as? String {
-                        canada.title = title
-                    }
                     canada.rows = photos
                     
                     completion(canada, nil)
@@ -71,6 +74,31 @@ class PhotoRequest: NSObject {
                 print("Error deserializing JSON: \(error)")
                 completion(nil, error)
             }
+        }
+        downloadTask.resume()
+    }
+    
+    //Here use SDWebImage
+    //Other wise I'll category UIImage (download Data and Manage Cache and so on)
+    class func downloadImg(url: String, completion: @escaping (_ img: Data?,  _ error: Error?) -> Void ) {
+        let request = URLRequest(url: URL(string: url)!)
+        let session = URLSession.shared
+        let downloadTask: URLSessionDownloadTask = session.downloadTask(with: request) { location, response, error in
+            guard location != nil && error == nil else {
+                print(error ?? "Error")
+                completion(nil, error)
+                return
+            }
+            
+            guard let data = try? Data(contentsOf: location!) else {
+                print("Error: Couldn't read data")
+                completion(nil, error)
+                return
+            }
+            completion(data, error)
+            
+            //More to go
+            //Image Data Should be Cached
         }
         downloadTask.resume()
     }

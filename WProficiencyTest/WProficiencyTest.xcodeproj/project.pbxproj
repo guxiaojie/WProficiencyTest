@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A088D474B1C2BD770941B92 /* libPods-WProficiencyTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B955686ED554B590A6B634CA /* libPods-WProficiencyTest.a */; };
+		C676FA9A2053B37F0026E048 /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C676FA992053B37F0026E048 /* cloud@2x.png */; };
 		C68F08A420537025005645C0 /* Canada.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F08A320537025005645C0 /* Canada.swift */; };
 		C68F08A620537032005645C0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F08A520537032005645C0 /* Photo.swift */; };
 		C68F08A920537358005645C0 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F08A820537358005645C0 /* PhotoTableViewCell.swift */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		650627B85111877EF4E30562 /* Pods-WProficiencyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WProficiencyTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WProficiencyTest/Pods-WProficiencyTest.debug.xcconfig"; sourceTree = "<group>"; };
+		749E9D29B582D76517B1BD30 /* Pods-WProficiencyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WProficiencyTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-WProficiencyTest/Pods-WProficiencyTest.release.xcconfig"; sourceTree = "<group>"; };
+		B955686ED554B590A6B634CA /* libPods-WProficiencyTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WProficiencyTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C676FA992053B37F0026E048 /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
 		C68F08A320537025005645C0 /* Canada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Canada.swift; path = WProficiencyTest/Canada.swift; sourceTree = SOURCE_ROOT; };
 		C68F08A520537032005645C0 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = WProficiencyTest/Photo.swift; sourceTree = SOURCE_ROOT; };
 		C68F08A820537358005645C0 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		C6F706F920536B1000B4FB18 /* WProficiencyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WProficiencyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F706FD20536B1000B4FB18 /* WProficiencyTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WProficiencyTestUITests.swift; sourceTree = "<group>"; };
 		C6F706FF20536B1000B4FB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6FE131E2053AC7E00093D85 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FE13202053ADC200093D85 /* WProficiencyTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WProficiencyTest-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A088D474B1C2BD770941B92 /* libPods-WProficiencyTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80FAA73184EFD0560E499FAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				650627B85111877EF4E30562 /* Pods-WProficiencyTest.debug.xcconfig */,
+				749E9D29B582D76517B1BD30 /* Pods-WProficiencyTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A28908F9CE2812D06F29ADBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6FE131E2053AC7E00093D85 /* libSDWebImage.a */,
+				B955686ED554B590A6B634CA /* libPods-WProficiencyTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C676FA982053B37F0026E048 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C676FA992053B37F0026E048 /* cloud@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		C68F08A120536FBA005645C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +138,8 @@
 				C6F706F120536B1000B4FB18 /* WProficiencyTestTests */,
 				C6F706FC20536B1000B4FB18 /* WProficiencyTestUITests */,
 				C6F706DB20536B0D00B4FB18 /* Products */,
+				80FAA73184EFD0560E499FAF /* Pods */,
+				A28908F9CE2812D06F29ADBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,7 +160,9 @@
 				C6F706DF20536B0D00B4FB18 /* ViewController.swift */,
 				C68F08A72053703B005645C0 /* Models */,
 				C68F08A120536FBA005645C0 /* Views */,
+				C676FA982053B37F0026E048 /* images */,
 				C6F706E420536B1000B4FB18 /* Assets.xcassets */,
+				C6FE13202053ADC200093D85 /* WProficiencyTest-Bridging-Header.h */,
 				C6F706E920536B1000B4FB18 /* Info.plist */,
 			);
 			path = WProficiencyTest;
@@ -154,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6F7070220536B1000B4FB18 /* Build configuration list for PBXNativeTarget "WProficiencyTest" */;
 			buildPhases = (
+				9EB4569366A8EB9FABB82215 /* [CP] Check Pods Manifest.lock */,
 				C6F706D620536B0D00B4FB18 /* Sources */,
 				C6F706D720536B0D00B4FB18 /* Frameworks */,
 				C6F706D820536B0D00B4FB18 /* Resources */,
+				36A1FDA48BADD25AFE10C458 /* [CP] Embed Pods Frameworks */,
+				BDBF59D261C11DCA26007B8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +257,7 @@
 				TargetAttributes = {
 					C6F706D920536B0D00B4FB18 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					C6F706ED20536B1000B4FB18 = {
 						CreatedOnToolsVersion = 9.3;
@@ -251,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C676FA9A2053B37F0026E048 /* cloud@2x.png in Resources */,
 				C6F706E520536B1000B4FB18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +314,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36A1FDA48BADD25AFE10C458 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WProficiencyTest/Pods-WProficiencyTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EB4569366A8EB9FABB82215 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WProficiencyTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDBF59D261C11DCA26007B8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WProficiencyTest/Pods-WProficiencyTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6F706D620536B0D00B4FB18 /* Sources */ = {
@@ -432,8 +527,10 @@
 		};
 		C6F7070320536B1000B4FB18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650627B85111877EF4E30562 /* Pods-WProficiencyTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WProficiencyTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -441,8 +538,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.www.WProficiencyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WProficiencyTest/WProficiencyTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,8 +556,10 @@
 		};
 		C6F7070420536B1000B4FB18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749E9D29B582D76517B1BD30 /* Pods-WProficiencyTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WProficiencyTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -459,8 +567,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.www.WProficiencyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WProficiencyTest/WProficiencyTest-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
