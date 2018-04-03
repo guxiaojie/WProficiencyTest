@@ -11,10 +11,13 @@
 		C696BBAD20736CB0002D987C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBAC20736CB0002D987C /* ViewController.swift */; };
 		C696BBB220736CB0002D987C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C696BBB120736CB0002D987C /* Assets.xcassets */; };
 		C696BBC020736CB0002D987C /* BBQManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBBF20736CB0002D987C /* BBQManTests.swift */; };
-		C696BBD820737301002D987C /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBD420737300002D987C /* PhotoRequest.swift */; };
-		C696BBD920737301002D987C /* Canada.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBD520737300002D987C /* Canada.swift */; };
-		C696BBDA20737301002D987C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBD620737300002D987C /* Photo.swift */; };
-		C696BBDB20737301002D987C /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBD720737301002D987C /* PhotoTableViewCell.swift */; };
+		C696BBE0207376ED002D987C /* Canada.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBDC207376ED002D987C /* Canada.swift */; };
+		C696BBE1207376ED002D987C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBDD207376ED002D987C /* Photo.swift */; };
+		C696BBE2207376ED002D987C /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBDE207376ED002D987C /* PhotoRequest.swift */; };
+		C696BBE3207376ED002D987C /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBDF207376ED002D987C /* PhotoTableViewCell.swift */; };
+		C696BBE62073782D002D987C /* PhotoTablewViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBE42073782C002D987C /* PhotoTablewViewCellTests.swift */; };
+		C696BBE72073782D002D987C /* PhotoRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696BBE52073782D002D987C /* PhotoRequestTests.swift */; };
+		C696BBE920737854002D987C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C696BBE820737854002D987C /* data.json */; };
 		E75FA4A27DA0C4AE64B83A62 /* Pods_BBQManTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C256718E0F56D3238BCD95 /* Pods_BBQManTests.framework */; };
 		FC0C1050E31EBB5E7131B9C9 /* Pods_BBQMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7151837A7A5074EDF6EA72 /* Pods_BBQMan.framework */; };
 /* End PBXBuildFile section */
@@ -42,10 +45,13 @@
 		C696BBBB20736CB0002D987C /* BBQManTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBQManTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C696BBBF20736CB0002D987C /* BBQManTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBQManTests.swift; sourceTree = "<group>"; };
 		C696BBC120736CB0002D987C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C696BBD420737300002D987C /* PhotoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoRequest.swift; path = ../../WProficiencyTest/WProficiencyTest/PhotoRequest.swift; sourceTree = "<group>"; };
-		C696BBD520737300002D987C /* Canada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Canada.swift; path = ../../WProficiencyTest/WProficiencyTest/Canada.swift; sourceTree = "<group>"; };
-		C696BBD620737300002D987C /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = ../../WProficiencyTest/WProficiencyTest/Photo.swift; sourceTree = "<group>"; };
-		C696BBD720737301002D987C /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoTableViewCell.swift; path = ../../WProficiencyTest/WProficiencyTest/PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		C696BBDC207376ED002D987C /* Canada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canada.swift; sourceTree = "<group>"; };
+		C696BBDD207376ED002D987C /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C696BBDE207376ED002D987C /* PhotoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
+		C696BBDF207376ED002D987C /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		C696BBE42073782C002D987C /* PhotoTablewViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTablewViewCellTests.swift; sourceTree = "<group>"; };
+		C696BBE52073782D002D987C /* PhotoRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRequestTests.swift; sourceTree = "<group>"; };
+		C696BBE820737854002D987C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		C6C256718E0F56D3238BCD95 /* Pods_BBQManTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBQManTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2597BF4EBBB635BB69828EE /* Pods-BBQManTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBQManTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBQManTests/Pods-BBQManTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,10 +112,10 @@
 			children = (
 				C696BBAA20736CB0002D987C /* AppDelegate.swift */,
 				C696BBAC20736CB0002D987C /* ViewController.swift */,
-				C696BBD520737300002D987C /* Canada.swift */,
-				C696BBD620737300002D987C /* Photo.swift */,
-				C696BBD420737300002D987C /* PhotoRequest.swift */,
-				C696BBD720737301002D987C /* PhotoTableViewCell.swift */,
+				C696BBDC207376ED002D987C /* Canada.swift */,
+				C696BBDD207376ED002D987C /* Photo.swift */,
+				C696BBDE207376ED002D987C /* PhotoRequest.swift */,
+				C696BBDF207376ED002D987C /* PhotoTableViewCell.swift */,
 				C696BBB120736CB0002D987C /* Assets.xcassets */,
 				C696BBB620736CB0002D987C /* Info.plist */,
 			);
@@ -119,6 +125,9 @@
 		C696BBBE20736CB0002D987C /* BBQManTests */ = {
 			isa = PBXGroup;
 			children = (
+				C696BBE820737854002D987C /* data.json */,
+				C696BBE52073782D002D987C /* PhotoRequestTests.swift */,
+				C696BBE42073782C002D987C /* PhotoTablewViewCellTests.swift */,
 				C696BBBF20736CB0002D987C /* BBQManTests.swift */,
 				C696BBC120736CB0002D987C /* Info.plist */,
 			);
@@ -231,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C696BBE920737854002D987C /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,12 +358,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C696BBE3207376ED002D987C /* PhotoTableViewCell.swift in Sources */,
+				C696BBE1207376ED002D987C /* Photo.swift in Sources */,
 				C696BBAD20736CB0002D987C /* ViewController.swift in Sources */,
-				C696BBD820737301002D987C /* PhotoRequest.swift in Sources */,
-				C696BBDB20737301002D987C /* PhotoTableViewCell.swift in Sources */,
 				C696BBAB20736CB0002D987C /* AppDelegate.swift in Sources */,
-				C696BBD920737301002D987C /* Canada.swift in Sources */,
-				C696BBDA20737301002D987C /* Photo.swift in Sources */,
+				C696BBE2207376ED002D987C /* PhotoRequest.swift in Sources */,
+				C696BBE0207376ED002D987C /* Canada.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C696BBE62073782D002D987C /* PhotoTablewViewCellTests.swift in Sources */,
 				C696BBC020736CB0002D987C /* BBQManTests.swift in Sources */,
+				C696BBE72073782D002D987C /* PhotoRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

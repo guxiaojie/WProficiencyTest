@@ -33,4 +33,24 @@ class BBQManTests: XCTestCase {
         }
     }
     
+    func testTitleExitsFromMockData() {
+        let canada: Canada = self.mockData()
+        let viewController = ViewController(canada: canada)
+        XCTAssertNil(viewController.title);
+    }
+    
+    func testTableExistsWhenNoData() {
+        let canada: Canada = self.mockData()
+        let viewController = ViewController(canada: canada)
+        XCTAssertNotNil(viewController.tableView);
+    }
+    
+    //MARK: Data
+    func mockData() -> Canada{
+        let canada = Canada()
+        canada.title = "a"
+        canada.rows = []
+        return canada
+    }
+    
 }
