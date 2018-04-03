@@ -25,6 +25,13 @@ Use URLSessionDataTask instead of  NSURLConnection
 class func downloadData(completion: @escaping (_ blog: Canada?,  _ error: Error?) -> Void ) {}
 ```
 
+## Pod
+Pod Parse JSON and  download Image
+
+```objective-c
+pod 'SwiftyJSON'
+pod 'Kingfisher', '~> 4.0'
+```
 
 ## Unit Tests
 includes a suite of unit tests within the Tests subdirectory. These tests can be run simply be executed the test action on the platform framework you would like to test.
